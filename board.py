@@ -1,13 +1,18 @@
 from numpy import matrix
+import random
 
-
-row1 = [0,0,0,4]
-row2 = [16,4,2,4]
-row3 = [2,2,8,4]
-row4 = [4,2,8,32]
+row1 = [0,0,0,0]
+row2 = [0,0,0,0]
+row3 = [2,2,0,0]
+row4 = [0,0,0,0]
 grid = matrix([row1, row2, row3, row4])
-
+def addnum():
+    numList = random.sample([2,2,2,2,2,2,2,2,2,4],1)
+    s = ''.join(map(str, numList))
+    return int(s)
 def moveleft(grid):
+    randrow = random.randrange(0,4)
+
     for h in range(4):
 
 
@@ -42,10 +47,17 @@ def moveleft(grid):
                 row[x-1] = row[x]
                 row[x] = 0
                 # x+=1
+        if h == randrow:
+            row[3] = addnum()
 
         grid[h] = row
 
+
+
+
 def moveright(grid):
+    randrow = random.randrange(0,4)
+
     for h in range(4):
 
         row = grid.tolist()[h]
@@ -72,12 +84,16 @@ def moveright(grid):
                 row[x+1] = row[x]
                 row[x] = 0
                 # x-=1
+        if h == randrow:
+            row[0] = addnum()
 
         grid[h] = row
 
 def moveup(grid):
     grid = grid.transpose()
     moveleft(grid)
+
+
 
 def movedown(grid):
     grid = grid.transpose()

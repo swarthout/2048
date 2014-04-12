@@ -60,8 +60,8 @@ def moveright(row):
             x-=1
 
 
-print(testrow1)
-moveleft(testrow1)
-print(testrow1)
 
 
+print("Hello")
+
+print("New Text")
