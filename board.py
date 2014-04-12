@@ -3,15 +3,20 @@ import random
 
 row1 = [0,0,0,0]
 row2 = [0,0,0,0]
-row3 = [2,2,0,0]
-row4 = [0,0,0,0]
+row3 = [2,0,0,0]
+row4 = [0,0,2,0]
 grid = matrix([row1, row2, row3, row4])
 def addnum():
     numList = random.sample([2,2,2,2,2,2,2,2,2,4],1)
     s = ''.join(map(str, numList))
     return int(s)
+def pickrow(rowlist):
+    rowlist = random.sample(rowlist,1)
+    s = ''.join(map(str, rowlist))
+    return int(s)
 def moveleft(grid):
-    randrow = random.randrange(0,4)
+
+    possible_adds = []
 
     for h in range(4):
 
@@ -28,7 +33,7 @@ def moveleft(grid):
             while row[x-1] == 0 and row[x] != 0:
                 row[x-1] = row[x]
                 row[x] = 0
-                # x+=1
+
 
 
 
@@ -46,17 +51,24 @@ def moveleft(grid):
             while row[x-1] == 0 and row[x] != 0:
                 row[x-1] = row[x]
                 row[x] = 0
-                # x+=1
-        if h == randrow:
-            row[3] = addnum()
+
+        if row[3] == 0:
+            possible_adds.append(h)
 
         grid[h] = row
+    row_index = pickrow(possible_adds)
+
+    chosen_row = grid.tolist()[row_index]
+
+    chosen_row[3] = addnum()
+    grid[row_index] = chosen_row
 
 
 
 
 def moveright(grid):
-    randrow = random.randrange(0,4)
+    possible_adds = []
+
 
     for h in range(4):
 
@@ -67,7 +79,7 @@ def moveright(grid):
             while row[x+1] == 0 and row[x] != 0:
                 row[x+1] = row[x]
                 row[x] = 0
-                # x-=1
+
 
 
 
@@ -83,11 +95,22 @@ def moveright(grid):
             while row[x+1] == 0 and row[x] != 0:
                 row[x+1] = row[x]
                 row[x] = 0
-                # x-=1
-        if h == randrow:
-            row[0] = addnum()
+
+
+        if row[0] == 0:
+            possible_adds.append(h)
+
+
 
         grid[h] = row
+
+    row_index = pickrow(possible_adds)
+
+    chosen_row = grid.tolist()[row_index]
+    chosen_row[0] = addnum()
+    grid[row_index] = chosen_row
+
+
 
 def moveup(grid):
     grid = grid.transpose()
@@ -100,10 +123,7 @@ def movedown(grid):
     moveright(grid)
 
 
-
 # print(grid)
-# movedown(grid)
+# moveright(grid)
 # print(grid)
-
-
 
