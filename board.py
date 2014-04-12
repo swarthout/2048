@@ -3,9 +3,10 @@ import random
 
 row1 = [0,0,0,0]
 row2 = [0,0,0,0]
-row3 = [2,0,0,0]
-row4 = [0,0,2,0]
+row3 = [2,2,0,0]
+row4 = [0,0,0,0]
 grid = matrix([row1, row2, row3, row4])
+score = 0
 def addnum():
     numList = random.sample([2,2,2,2,2,2,2,2,2,4],1)
     s = ''.join(map(str, numList))
@@ -43,6 +44,12 @@ def moveleft(grid):
             if row[x] == row[x-1] and row[x] != 0:
                 row[x-1] *=2
                 row[x] = 0
+                global score
+                local_score =  score
+                local_score += row[x-1]
+                score = local_score
+
+
 
         for x in range(3,0,-1):
 
@@ -89,6 +96,10 @@ def moveright(grid):
             if row[x] == row[x+1] and row[x] != 0:
                 row[x+1] *=2
                 row[x] = 0
+                global score
+                local_score =  score
+                local_score += row[x+1]
+                score = local_score
 
         for x in range(3):
 
@@ -124,6 +135,8 @@ def movedown(grid):
 
 
 # print(grid)
+# print(score)
 # moveright(grid)
 # print(grid)
+# print(score)
 

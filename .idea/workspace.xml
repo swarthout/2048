@@ -23,13 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="board.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="board.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/board.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="0" selection-start="1806" selection-end="1806" vertical-scroll-proportion="1.3841871" vertical-offset="362" max-vertical-offset="2025">
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
+            <state line="136" column="0" selection-start="2350" selection-end="2423" vertical-scroll-proportion="-7.28" vertical-offset="1843" max-vertical-offset="2205">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -37,7 +35,16 @@
       <file leaf-file-name="move test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/move test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-33.32" vertical-offset="172" max-vertical-offset="1095">
+            <state line="65" column="0" selection-start="1173" selection-end="1173" vertical-scroll-proportion="-39.0" vertical-offset="0" max-vertical-offset="1095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="to do list.rtf" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/to do list.rtf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="54" selection-start="153" selection-end="153" vertical-scroll-proportion="0.11627907" vertical-offset="0" max-vertical-offset="387">
               <folding />
             </state>
           </provider>
@@ -46,8 +53,10 @@
       <file leaf-file-name="runtime.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runtime.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="1616" selection-end="1616" vertical-scroll-proportion="-32.32" vertical-offset="152" max-vertical-offset="1050">
-              <folding />
+            <state line="58" column="55" selection-start="1617" selection-end="1617" vertical-scroll-proportion="-18.28" vertical-offset="413" max-vertical-offset="1065">
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,17 +72,18 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/matrix.py" />
-        <option value="$PROJECT_DIR$/runtime.py" />
         <option value="$PROJECT_DIR$/move test.py" />
         <option value="$PROJECT_DIR$/board.py" />
+        <option value="$PROJECT_DIR$/runtime.py" />
+        <option value="$PROJECT_DIR$/to do list.rtf" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-1287" />
+    <option name="y" value="265" />
+    <option name="width" value="1152" />
+    <option name="height" value="720" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -348,18 +358,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1287" y="265" width="1152" height="720" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20774648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32665965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -391,10 +401,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state line="107" column="0" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2025">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -408,16 +416,62 @@
     <entry file="file://$PROJECT_DIR$/runtime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="0" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="1050">
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="0" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="2025">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/move test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="1065">
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="16" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/move test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="1050">
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/board.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="0" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="465">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -431,16 +485,16 @@
     <entry file="file://$PROJECT_DIR$/runtime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="0" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="1065">
-          <folding />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/board.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="0" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="465">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -454,6 +508,15 @@
     <entry file="file://$PROJECT_DIR$/runtime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="0" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="1065">
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
@@ -461,48 +524,37 @@
     <entry file="file://$PROJECT_DIR$/board.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="28" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="795">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="795">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/move test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="1110" selection-end="1110" vertical-scroll-proportion="-33.32" vertical-offset="172" max-vertical-offset="1095">
+        <state line="136" column="0" selection-start="2350" selection-end="2423" vertical-scroll-proportion="-7.28" vertical-offset="1843" max-vertical-offset="2205">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runtime.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="1616" selection-end="1616" vertical-scroll-proportion="-32.32" vertical-offset="152" max-vertical-offset="1050">
+        <state line="58" column="55" selection-start="1617" selection-end="1617" vertical-scroll-proportion="-18.28" vertical-offset="413" max-vertical-offset="1065">
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/move test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="1173" selection-end="1173" vertical-scroll-proportion="-39.0" vertical-offset="0" max-vertical-offset="1095">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/to do list.rtf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923">
+        <state line="3" column="54" selection-start="153" selection-end="153" vertical-scroll-proportion="0.11627907" vertical-offset="0" max-vertical-offset="387">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="0" selection-start="1806" selection-end="1806" vertical-scroll-proportion="1.3841871" vertical-offset="362" max-vertical-offset="2025">
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

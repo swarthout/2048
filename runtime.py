@@ -36,27 +36,27 @@ class App(object):
         if self.right:
 
             board.moveright(playboard)
-            print(playboard,"\n")
+            print(playboard,"\n","\n","Score: %d"%board.score,"\n")
 
         elif self.left:
 
             board.moveleft(playboard)
-            print(playboard,"\n")
+            print(playboard,"\n","\n","Score: %d"%board.score,"\n")
         elif self.up:
 
             board.moveup(playboard)
-            print(playboard,"\n")
+            print(playboard,"\n","\n","Score: %d"%board.score,"\n")
         elif self.down:
 
             board.movedown(playboard)
-            print(playboard,"\n")
+            print(playboard,"\n","\n","Score: %d"%board.score,"\n")
         root.after(100,self.task)
 
 application = App()
 root = tk.Tk()
 print("***2048***")
 print( "Press arrow keys to move board (Escape key to exit):","\n")
-print(playboard,"\n")
+print(playboard,"\n","\n","Score: %d"%board.score,"\n")
 
 root.bind_all('<Key>', application.keyPressed)
 root.bind_all('<KeyRelease>', application.keyReleased)
