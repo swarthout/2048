@@ -1,6 +1,7 @@
 import tkinter as tk
-import board
-playboard = board.grid
+import game_logic
+game_logic.newboard()
+current_game = game_logic.grid
 
 class App(object):
     def __init__(self):
@@ -8,6 +9,12 @@ class App(object):
         self.left = False
         self.up = False
         self.down = False
+    def output():
+        print(100*"\n")
+        print("***2048***")
+        print( "Press arrow keys to move tiles! (Escape key to exit):","\n")
+        print(current_game,"\n","\n","Score: %d"%game_logic.score,"\n")
+
 
     def keyPressed(self,event):
 
@@ -35,28 +42,31 @@ class App(object):
     def task(self):
         if self.right:
 
-            board.moveright(playboard)
-            print(playboard,"\n","\n","Score: %d"%board.score,"\n")
+            game_logic.moveright(current_game)
+            App.output()
 
         elif self.left:
 
-            board.moveleft(playboard)
-            print(playboard,"\n","\n","Score: %d"%board.score,"\n")
+            game_logic.moveleft(current_game)
+            App.output()
+
         elif self.up:
 
-            board.moveup(playboard)
-            print(playboard,"\n","\n","Score: %d"%board.score,"\n")
+            game_logic.moveup(current_game)
+            App.output()
         elif self.down:
 
-            board.movedown(playboard)
-            print(playboard,"\n","\n","Score: %d"%board.score,"\n")
+            game_logic.movedown(current_game)
+            App.output()
+
         root.after(100,self.task)
 
 application = App()
 root = tk.Tk()
+print(100*"\n")
 print("***2048***")
-print( "Press arrow keys to move board (Escape key to exit):","\n")
-print(playboard,"\n","\n","Score: %d"%board.score,"\n")
+print( "Press arrow keys to move tiles! (Escape key to exit):","\n")
+print(current_game,"\n","\n","Score: %d"%game_logic.score,"\n")
 
 root.bind_all('<Key>', application.keyPressed)
 root.bind_all('<KeyRelease>', application.keyReleased)

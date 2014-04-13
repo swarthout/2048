@@ -3,18 +3,34 @@ import random
 
 row1 = [0,0,0,0]
 row2 = [0,0,0,0]
-row3 = [2,2,0,0]
+row3 = [0,0,0,0]
 row4 = [0,0,0,0]
 grid = matrix([row1, row2, row3, row4])
 score = 0
+
+def newboard():
+    for i in range(2):
+        row_index = pickrow([0,1,2,3])
+
+        chosen_row = grid.tolist()[row_index]
+        chosen_row[pickrow([0,1,2,3])] = 2
+        grid[row_index] = chosen_row
+
+
 def addnum():
     numList = random.sample([2,2,2,2,2,2,2,2,2,4],1)
     s = ''.join(map(str, numList))
     return int(s)
+
+
+
 def pickrow(rowlist):
     rowlist = random.sample(rowlist,1)
     s = ''.join(map(str, rowlist))
     return int(s)
+
+
+
 def moveleft(grid):
 
     possible_adds = []
@@ -69,7 +85,6 @@ def moveleft(grid):
 
     chosen_row[3] = addnum()
     grid[row_index] = chosen_row
-
 
 
 
@@ -134,9 +149,4 @@ def movedown(grid):
     moveright(grid)
 
 
-# print(grid)
-# print(score)
-# moveright(grid)
-# print(grid)
-# print(score)
 
