@@ -10,11 +10,16 @@ score = 0
 
 def newboard():
     for i in range(2):
-        row_index = pickrow([0,1,2,3])
+        row_index = pickone([0,1,2,3])
+        tile_index = pickone([0,1,2,3])
 
         chosen_row = grid.tolist()[row_index]
-        chosen_row[pickrow([0,1,2,3])] = 2
+        while chosen_row[tile_index] != 0:
+            tile_index = pickone([0,1,2,3])
+
+        chosen_row[tile_index] = 2
         grid[row_index] = chosen_row
+
 
 
 def addnum():
@@ -24,7 +29,7 @@ def addnum():
 
 
 
-def pickrow(rowlist):
+def pickone(rowlist):
     rowlist = random.sample(rowlist,1)
     s = ''.join(map(str, rowlist))
     return int(s)
@@ -41,15 +46,16 @@ def moveleft(grid):
 
         row = grid.tolist()[h]
 
-
-
         for x in range(3,0,-1):
 
-
-
             while row[x-1] == 0 and row[x] != 0:
-                row[x-1] = row[x]
-                row[x] = 0
+
+                for x in range(3,0,-1):
+
+                    while row[x-1] == 0 and row[x] != 0:
+                        row[x-1] = row[x]
+                        row[x] = 0
+                        print(row)
 
 
 
@@ -67,19 +73,12 @@ def moveleft(grid):
 
 
 
-        for x in range(3,0,-1):
-
-
-
-            while row[x-1] == 0 and row[x] != 0:
-                row[x-1] = row[x]
-                row[x] = 0
 
         if row[3] == 0:
             possible_adds.append(h)
 
         grid[h] = row
-    row_index = pickrow(possible_adds)
+    row_index = pickone(possible_adds)
 
     chosen_row = grid.tolist()[row_index]
 
@@ -95,12 +94,14 @@ def moveright(grid):
     for h in range(4):
 
         row = grid.tolist()[h]
-
         for x in range(3):
 
             while row[x+1] == 0 and row[x] != 0:
-                row[x+1] = row[x]
-                row[x] = 0
+                for x in range(3):
+
+                    while row[x+1] == 0 and row[x] != 0:
+                        row[x+1] = row[x]
+                        row[x] = 0
 
 
 
@@ -116,11 +117,7 @@ def moveright(grid):
                 local_score += row[x+1]
                 score = local_score
 
-        for x in range(3):
 
-            while row[x+1] == 0 and row[x] != 0:
-                row[x+1] = row[x]
-                row[x] = 0
 
 
         if row[0] == 0:
@@ -130,7 +127,7 @@ def moveright(grid):
 
         grid[h] = row
 
-    row_index = pickrow(possible_adds)
+    row_index = pickone(possible_adds)
 
     chosen_row = grid.tolist()[row_index]
     chosen_row[0] = addnum()
@@ -147,6 +144,5 @@ def moveup(grid):
 def movedown(grid):
     grid = grid.transpose()
     moveright(grid)
-
 
 
