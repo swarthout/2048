@@ -17,7 +17,7 @@ def newboard():
         while chosen_row[tile_index] != 0:
             tile_index = pickone([0,1,2,3])
 
-        chosen_row[tile_index] = 2
+        chosen_row[tile_index] = addnum()
         grid[row_index] = chosen_row
 
 
