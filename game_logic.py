@@ -55,8 +55,30 @@ def moveleft(grid):
                     while row[x-1] == 0 and row[x] != 0:
                         row[x-1] = row[x]
                         row[x] = 0
-                        print(row)
 
+        # def testshift():
+        #     canshift = True
+        #     for x in range(3):
+        #         if row[x] == 0 and row[x+1] != 0:
+        #             canshift = True
+        #             break
+        #         else:
+        #             canshift = False
+        #             break
+        #     return canshift
+        #
+        #
+        # while testshift():
+        #     for f in range(3,0,-1):
+        #
+        #            while row[f-1] == 0 and row[f] != 0:
+        #                 row[f-1] = row[f]
+        #                 row[f] = 0
+        #     for x in range(3):
+        #
+        #             # while row[x+1] == 0 and row[x] != 0:
+        #         row[x+1] = row[x]
+        #         row[x+1] = 0
 
 
 
