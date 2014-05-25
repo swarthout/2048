@@ -34,7 +34,8 @@ def pickone(rowlist):
     s = ''.join(map(str, rowlist))
     return int(s)
 
-
+def removezero(the_list):
+            return [value for value in the_list if value != 0]
 
 def moveleft(grid):
 
@@ -42,56 +43,21 @@ def moveleft(grid):
 
     for h in range(4):
 
-
-
         row = grid.tolist()[h]
+        row = removezero(row)
 
-        for x in range(3,0,-1):
+        z = 0
 
-            while row[x-1] == 0 and row[x] != 0:
-
-                for x in range(3,0,-1):
-
-                    while row[x-1] == 0 and row[x] != 0:
-                        row[x-1] = row[x]
-                        row[x] = 0
-
-        # def testshift():
-        #     canshift = True
-        #     for x in range(3):
-        #         if row[x] == 0 and row[x+1] != 0:
-        #             canshift = True
-        #             break
-        #         else:
-        #             canshift = False
-        #             break
-        #     return canshift
-        #
-        #
-        # while testshift():
-        #     for f in range(3,0,-1):
-        #
-        #            while row[f-1] == 0 and row[f] != 0:
-        #                 row[f-1] = row[f]
-        #                 row[f] = 0
-        #     for x in range(3):
-        #
-        #             # while row[x+1] == 0 and row[x] != 0:
-        #         row[x+1] = row[x]
-        #         row[x+1] = 0
+        while z < (len(row)-1):
+                    if row[z+1] == row[z]:
+                        row[z] *= 2
+                        del row[z+1]
 
 
+                    z += 1
+        for count in range(-len(row) + 4):
+            row.append(0)
 
-
-
-        for x in range(1,4):
-            if row[x] == row[x-1] and row[x] != 0:
-                row[x-1] *=2
-                row[x] = 0
-                global score
-                local_score =  score
-                local_score += row[x-1]
-                score = local_score
 
 
 
@@ -112,48 +78,46 @@ def moveleft(grid):
 def moveright(grid):
     possible_adds = []
 
-
     for h in range(4):
 
         row = grid.tolist()[h]
-        for x in range(3):
 
-            while row[x+1] == 0 and row[x] != 0:
-                for x in range(3):
+        row = row[::-1]
 
-                    while row[x+1] == 0 and row[x] != 0:
-                        row[x+1] = row[x]
-                        row[x] = 0
+        row = removezero(row)
+
+        z = 0
+
+        while z < (len(row)-1):
+                    if row[z+1] == row[z]:
+                        row[z] *= 2
+                        del row[z+1]
 
 
-
-
-
-
-        for x in range(-2,-5,-1):
-            if row[x] == row[x+1] and row[x] != 0:
-                row[x+1] *=2
-                row[x] = 0
-                global score
-                local_score =  score
-                local_score += row[x+1]
-                score = local_score
+                    z += 1
+        for count in range(-len(row) + 4):
+            row.append(0)
 
 
 
 
-        if row[0] == 0:
+
+        if row[3] == 0:
             possible_adds.append(h)
 
 
+        row = row[::-1]
 
         grid[h] = row
-
     row_index = pickone(possible_adds)
 
     chosen_row = grid.tolist()[row_index]
+
     chosen_row[0] = addnum()
+
     grid[row_index] = chosen_row
+
+
 
 
 

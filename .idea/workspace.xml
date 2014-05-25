@@ -32,19 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game_logic.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game_logic.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game_logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="23" selection-start="1327" selection-end="1327" vertical-scroll-proportion="-31.72" vertical-offset="152" max-vertical-offset="2625">
+            <state line="13" column="39" selection-start="276" selection-end="276" vertical-scroll-proportion="0.20044543" vertical-offset="0" max-vertical-offset="2085">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game_run.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game_run.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="280" selection-end="280" vertical-scroll-proportion="0.18374164" vertical-offset="0" max-vertical-offset="1200">
+            <state line="4" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -104,6 +104,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -124,7 +125,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,7 +343,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21074815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26238146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -373,6 +373,48 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/to do list.rtf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="54" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="0" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0" vertical-offset="1380" max-vertical-offset="2145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="23" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/to do list.rtf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="54" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_logic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="23" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/to do list.rtf">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="54" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
@@ -548,16 +590,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game_logic.py">
+    <entry file="file://$PROJECT_DIR$/game_run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="23" selection-start="1327" selection-end="1327" vertical-scroll-proportion="-31.72" vertical-offset="152" max-vertical-offset="2625">
+        <state line="4" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game_run.py">
+    <entry file="file://$PROJECT_DIR$/game_logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="280" selection-end="280" vertical-scroll-proportion="0.18374164" vertical-offset="0" max-vertical-offset="1200">
+        <state line="13" column="39" selection-start="276" selection-end="276" vertical-scroll-proportion="0.20044543" vertical-offset="0" max-vertical-offset="2085">
           <folding />
         </state>
       </provider>
