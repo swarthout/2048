@@ -40,6 +40,7 @@ def removezero(the_list):
 def moveleft(grid):
 
     possible_adds = []
+    beforegrid = grid
 
     for h in range(4):
 
@@ -52,6 +53,10 @@ def moveleft(grid):
                     if row[z+1] == row[z]:
                         row[z] *= 2
                         del row[z+1]
+                        global score
+                        local_score =  score
+                        local_score += row[z]
+                        score = local_score
 
 
                     z += 1
@@ -66,23 +71,27 @@ def moveleft(grid):
             possible_adds.append(h)
 
         grid[h] = row
-    row_index = pickone(possible_adds)
+    if beforegrid.tolist() != grid.tolist():
+        row_index = pickone(possible_adds)
 
-    chosen_row = grid.tolist()[row_index]
+        chosen_row = grid.tolist()[row_index]
 
-    chosen_row[3] = addnum()
-    grid[row_index] = chosen_row
+        chosen_row[3] = addnum()
+        grid[row_index] = chosen_row
 
 
 
 def moveright(grid):
     possible_adds = []
+    same_test = 0
+
 
     for h in range(4):
 
         row = grid.tolist()[h]
 
         row = row[::-1]
+        before_row = row
 
         row = removezero(row)
 
@@ -92,6 +101,10 @@ def moveright(grid):
                     if row[z+1] == row[z]:
                         row[z] *= 2
                         del row[z+1]
+                        global score
+                        local_score =  score
+                        local_score += row[z]
+                        score = local_score
 
 
                     z += 1
@@ -108,14 +121,22 @@ def moveright(grid):
 
         row = row[::-1]
 
+        if row == before_row:
+            same_test +=1
+
+
         grid[h] = row
-    row_index = pickone(possible_adds)
 
-    chosen_row = grid.tolist()[row_index]
+    if same_test != 4:
 
-    chosen_row[0] = addnum()
 
-    grid[row_index] = chosen_row
+        row_index = pickone(possible_adds)
+
+        chosen_row = grid.tolist()[row_index]
+
+        chosen_row[0] = addnum()
+
+        grid[row_index] = chosen_row
 
 
 

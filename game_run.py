@@ -10,9 +10,9 @@ class App(object):
         self.up = False
         self.down = False
     def output():
-        print(10*"\n")
+        print(20*"\n")
         print("***2048***")
-        print( "Press arrow keys to move tiles! (Escape key to exit):","\n")
+        print( "Press arrow keys or WASD to move tiles! (Escape key to exit):","\n")
         print(current_game,"\n","\n","Score: %d"%game_logic.score,"\n")
 
 
@@ -20,23 +20,23 @@ class App(object):
 
         if event.keysym == 'Escape':
             root.destroy()
-        elif event.keysym == 'Right':
+        elif event.keysym == 'Right'or event.keysym == 'd':
             self.right = True
-        elif event.keysym == 'Left':
+        elif event.keysym == 'Left' or event.keysym == 'a':
             self.left = True
-        elif event.keysym == 'Up':
+        elif event.keysym == 'Up' or event.keysym == 'w':
             self.up = True
-        elif event.keysym == 'Down':
+        elif event.keysym == 'Down' or event.keysym == 's':
             self.down = True
 
     def keyReleased(self,event):
-        if event.keysym == 'Right':
+        if event.keysym == 'Right'or event.keysym == 'd':
             self.right = False
-        elif event.keysym == 'Left':
+        elif event.keysym == 'Left' or event.keysym == 'a':
             self.left = False
-        elif event.keysym == 'Up':
+        elif event.keysym == 'Up' or event.keysym == 'w':
             self.up = False
-        elif event.keysym == 'Down':
+        elif event.keysym == 'Down' or event.keysym == 's':
             self.down = False
 
     def task(self):
@@ -63,9 +63,9 @@ class App(object):
 
 application = App()
 root = tk.Tk()
-print(10*"\n")
+print(20*"\n")
 print("***2048***")
-print( "Press arrow keys to move tiles! (Escape key to exit):","\n")
+print( "Press arrow keys or WASD to move tiles! (Escape key to exit):","\n")
 print(current_game,"\n","\n","Score: %d"%game_logic.score,"\n")
 
 root.bind_all('<Key>', application.keyPressed)
